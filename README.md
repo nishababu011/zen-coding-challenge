@@ -1,16 +1,16 @@
-# zen-coding-challenge
+# Zendesk Search
 System and Software requirements to run the application.
 1. Install Java version "1.8.0_201" or higher.
-2. Add/Append the Java home path to the PATH system variable in the enviornment properties.(Eg: C:\Program Files\Java\jdk1.8.0_201\bin)
- 
-Application is built using Maven. 
-1. Maven version : apache-maven-3.6.0
-2. Add the Maven installation path (C:\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin) to the PATH system variable and add a JAVA_HOME pointing to JDK installation (Eg: C:\Program Files\Java\jdk1.8.0_201)
+2. Maven version : apache-maven-3.6.0
 
 Instructions to run the application.
-1. Download the folder #zen-coding-challenge/target/ZendeskSearchApp/ to any location in your local system.
+1. Download the folder ZendeskSearchApp to any location in your local system.
 2. Open cmd and cd to <path>/ZendeskSearchApp
 3. Run command :  java -jar ZendeskSearchApp.jar
+ 
+Note: Otherwise the application source can be downloaded and run mvn clean install 
+ and the run the jar from the target folder of the project 
+ 
   
 Application displays the main menu as below:
 

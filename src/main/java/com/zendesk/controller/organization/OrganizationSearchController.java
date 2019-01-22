@@ -15,7 +15,7 @@ import com.zendesk.util.LogUtil;
 import com.zendesk.util.SearchConstants;
 
 /**
- * 
+ * Controller class for Organization
  * @author 
  *
  */

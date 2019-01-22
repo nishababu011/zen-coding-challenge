@@ -5,8 +5,8 @@ import com.zendesk.model.Ticket;
 import com.zendesk.model.User;
 
 /**
- * 
- * @author NB
+ * This stores all the search data that are read from the JSON
+ * @author
  *
  */
 public class SearchData {

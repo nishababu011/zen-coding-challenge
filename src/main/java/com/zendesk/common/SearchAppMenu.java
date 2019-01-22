@@ -5,6 +5,12 @@ import com.zendesk.util.LogUtil;
 import com.zendesk.util.SearchConstants;
 import com.zendesk.exception.InvalidUserInputException;
 
+/**
+ * This enum stores the values in the Main Menu of the application
+ * and the action associated with each of it
+ * @author 
+ *
+ */
 public enum SearchAppMenu {
 	SEARCH{
 		public void performAction(SearchCriteria searchCriteria) {
@@ -29,6 +35,12 @@ public enum SearchAppMenu {
 	
 	public abstract void performAction(SearchCriteria searchCriteria);
 	
+	/**
+	 * This method maps the ENUM string to the user entered values
+	 * @param userInput
+	 * @return
+	 * @throws InvalidUserInputException
+	 */
 	public static SearchAppMenu mapByUserInput(String userInput) throws InvalidUserInputException {
 		if("1".equals(userInput)) {
 			return SEARCH;

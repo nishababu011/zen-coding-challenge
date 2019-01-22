@@ -4,7 +4,7 @@ import com.zendesk.dto.SearchCriteria;
 import com.zendesk.model.Ticket;
 
 /**
- * 
+ * Matcher interface for Ticket
  * @author
  *
  */

@@ -15,7 +15,8 @@ import com.zendesk.util.SearchConstants;
 public class SearchServiceImpl implements SearchService {
 
 	/**
-	 * 
+	 * This method performs the search by calling the appropriate controller
+	 * based on the search type
 	 */
 	public void performSearch(SearchCriteria searchCriteria, String searchType) {
 		try {

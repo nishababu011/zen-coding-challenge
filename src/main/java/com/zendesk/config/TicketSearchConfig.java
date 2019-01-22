@@ -10,7 +10,9 @@ import com.zendesk.util.SearchConstants;
 import com.zendesk.util.TicketSearchConstants;
 
 /**
- * 
+ *  This config stores the map of each fields of Ticket 
+ * and its corresponding Matcher class implementation.
+ * This map is loaded statically on start of the application
  * @author 
  *
  */

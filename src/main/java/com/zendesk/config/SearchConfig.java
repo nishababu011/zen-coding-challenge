@@ -9,8 +9,11 @@ import com.zendesk.search.users.UserMatcher;
 
 
 /**
- * 
- * @author joel
+ * This config stores the map of all the entities.
+ * A single point to get the configurations. 
+ * and its corresponding Matcher class implementation.
+ * This map is loaded statically on start of the application
+ * @author
  *
  */
 public class SearchConfig {

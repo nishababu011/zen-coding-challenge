@@ -11,7 +11,9 @@ import com.zendesk.util.SearchConstants;
 
 
 /**
- * 
+ * This config stores the map of each fields of Organization 
+ * and its corresponding Matcher class implementation.
+ * This map is loaded statically on start of the application
  * @author 
  *
  */

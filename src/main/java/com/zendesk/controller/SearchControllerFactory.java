@@ -6,7 +6,8 @@ import com.zendesk.controller.user.UserSearchController;
 import com.zendesk.util.SearchConstants;
 
 /**
- * 
+ * Factory class that provides the Controllers based
+ * on the entity type.
  * @author 
  *
  */

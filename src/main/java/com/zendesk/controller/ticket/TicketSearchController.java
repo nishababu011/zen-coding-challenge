@@ -16,7 +16,7 @@ import com.zendesk.util.SearchConstants;
 
 
 /**
- * 
+ * Controller class for Ticket
  * @author 
  *
  */

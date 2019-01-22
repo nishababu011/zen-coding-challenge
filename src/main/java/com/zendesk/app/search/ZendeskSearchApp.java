@@ -17,6 +17,10 @@ import com.zendesk.util.UserInputProcessor;
  */
 public class ZendeskSearchApp {
 
+	/**
+	 * 
+	 * @param hh
+	 */
 	public static void main(String hh[]) {
 		SearchDataInitialiser.loadSearchData();
 		SearchConfig.loadConfig();
@@ -46,7 +50,8 @@ public class ZendeskSearchApp {
 	
 	
 	/**
-	 * 
+	 * Method verifies the search criteria all the required value to perform
+	 * search
 	 * @param searchCriteria
 	 * @return
 	 */
@@ -59,7 +64,8 @@ public class ZendeskSearchApp {
 	}
 	
 	/**
-	 * 
+	 * This method invokes the service method to perform search
+	 * Irrespective of the output the searchCriteria will be reset.
 	 * @param searchCriteria
 	 */
 	private static void performSearch(SearchCriteria searchCriteria) {

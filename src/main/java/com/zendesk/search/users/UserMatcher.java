@@ -4,7 +4,7 @@ import com.zendesk.dto.SearchCriteria;
 import com.zendesk.model.User;
 
 /**
- * 
+ * Matcher interface for User
  * @author 
  * 
  */

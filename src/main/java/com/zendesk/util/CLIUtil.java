@@ -2,6 +2,11 @@ package com.zendesk.util;
 
 import java.util.Scanner;
 
+/**
+ * Util class to manage user input manipulations
+ * @author 
+ *
+ */
 public class CLIUtil {
 
 	private final Scanner scanner;

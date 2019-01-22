@@ -1,5 +1,10 @@
 package com.zendesk.exception;
 
+/**
+ * Exception thrown when an error occurs due to invalid user input
+ * @author
+ *
+ */
 public class InvalidUserInputException extends Exception {
 	/**
 	 * 

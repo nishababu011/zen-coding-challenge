@@ -12,7 +12,9 @@ import com.zendesk.util.UserSearchConstants;
 
 
 /**
- * 
+ *  This config stores the map of each fields of User 
+ * and its corresponding Matcher class implementation.
+ * This map is loaded statically on start of the application
  * @author 
  *
  */

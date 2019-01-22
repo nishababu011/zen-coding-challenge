@@ -61,5 +61,23 @@ public class IOUtilTest {
 		Date dateNull = IOUtil.parseDate(null, null);
 		assertNull(dateNull);
 	}
+	
+	@Test
+	public void testParseBooleanwithNull() {
+		Boolean booleanStr = IOUtil.parseBoolean("");
+		assertNull(booleanStr);
+		
+		 booleanStr = IOUtil.parseBoolean(null);
+		assertNull(booleanStr);
+	}
+	
+	@Test
+	public void testParseBoolean() {
+		Boolean booleanStr = IOUtil.parseBoolean("true");
+		assertTrue(booleanStr);
+		
+		 booleanStr = IOUtil.parseBoolean("false");
+		assertFalse(booleanStr);
+	}
 
 }

@@ -4,7 +4,8 @@ import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
 
 /**
- * 
+ * Abstract controller that can be extended to implement
+ * entity specific logic
  * @author 
  *
  */

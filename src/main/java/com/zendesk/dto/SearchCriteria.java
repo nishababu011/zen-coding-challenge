@@ -1,5 +1,11 @@
 package com.zendesk.dto;
 
+/**
+ * This object is used across to pass the search criteria 
+ * through out the application
+ * @author 
+ *
+ */
 public class SearchCriteria {
 	
 	private String searchType;

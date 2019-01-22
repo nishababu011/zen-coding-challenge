@@ -13,15 +13,18 @@ Instructions to run the application.
 3. Run command :  java -jar ZendeskSearchApp.jar
   
 Application displays the main menu as below:
-Welcome to Zendesk Search
-Type 'quit' to exit at any time, Please 'Enter' to continue
 
-Select search options:
-* Press 1 to search Zendesk
-* Press 2 to view a list of searchable fields
-* Type 'quit' to exit
+ Welcome to Zendesk Search
+ Type 'quit' to exit at any time, Please 'Enter' to continue
+
+ Select search options:
+ * Press 1 to search Zendesk
+ * Press 2 to view a list of searchable fields
+ * Type 'quit' to exit
 
 -> User can select any options to proceed.
+
 -> After each operation the application displays the main menu with all options to continue.
+
 -> Typing 'quit' will close the application.
 

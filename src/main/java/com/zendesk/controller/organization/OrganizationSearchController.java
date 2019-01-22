@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
+import org.apache.log4j.Logger;
+
 import com.zendesk.config.SearchConfig;
 import com.zendesk.controller.SearchController;
 import com.zendesk.dto.SearchCriteria;
@@ -20,6 +22,8 @@ import com.zendesk.util.SearchConstants;
  *
  */
 public class OrganizationSearchController implements SearchController {
+	
+	final static Logger logger = Logger.getLogger(OrganizationSearchController.class);
 
 	/**
 	 * This method applies the filters and logs the results to the user console
@@ -52,6 +56,7 @@ public class OrganizationSearchController implements SearchController {
 	 */
 	private void checkIfDataLoaded() throws InvalidUserInputException{
 		if(SearchDataInitialiser.SEARCH_DATA == null || SearchDataInitialiser.SEARCH_DATA.getOrganizations() == null) {
+			logger.debug(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME + ": Search Data is not loaded" );
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME);
 		}
 		

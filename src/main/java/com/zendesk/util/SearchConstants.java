@@ -36,7 +36,7 @@ public class SearchConstants {
 	
 	public static final String SEARCH_ENTER_FIELD_VALUE = "Enter search field value";
 	
-	public static final String SEARCH_ENTER_INVALID_USER_ENTRY = "Invalid entry.Please try again.\\n";
+	public static final String SEARCH_ENTER_INVALID_USER_ENTRY = "Invalid entry.Please try again.\n";
 	
 	public static final String SEARCH_ENTER_INVALID_FIELD_NAME = "Invalid field name.\n";
 	
@@ -50,7 +50,7 @@ public class SearchConstants {
 	
 	public static final String SEARCH_LIST_FIELDS_OPTION = "2";
 	
-	public static final String SEARCH_EXIT_OPTION = "3";
+	public static final String SEARCH_EXIT_OPTION = "quit";
 	
 	public static final String SEARCH_MENU_USERS = "1";
 
@@ -58,5 +58,5 @@ public class SearchConstants {
 
 	public static final String SEARCH_MENU_ORGANIZATIONS = "3";
 	
-	public static final String SEARCH_ERROR_INVALID_MENU_OPTION = "Invalid Menu option entered";
+	public static final String SEARCH_ERROR_INVALID_MENU_OPTION = "Invalid Menu option entered.\n";
 }

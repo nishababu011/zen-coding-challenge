@@ -66,8 +66,8 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase classname="com.zendesk.util.IOUtilTest" name="testParseDate" time="0"/>
-  <testcase classname="com.zendesk.util.IOUtilTest" name="testReadFile" time="0"/>
   <testcase classname="com.zendesk.util.IOUtilTest" name="testParseBoolean" time="0"/>
-  <testcase classname="com.zendesk.util.IOUtilTest" name="testParseDatewithNull" time="0"/>
+  <testcase classname="com.zendesk.util.IOUtilTest" name="testReadFile" time="0"/>
   <testcase classname="com.zendesk.util.IOUtilTest" name="testParseBooleanwithNull" time="0"/>
+  <testcase classname="com.zendesk.util.IOUtilTest" name="testParseDatewithNull" time="0"/>
 </testsuite>

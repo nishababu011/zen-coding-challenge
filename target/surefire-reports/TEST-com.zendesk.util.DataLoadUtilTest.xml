@@ -67,6 +67,6 @@
   </properties>
   <testcase classname="com.zendesk.util.DataLoadUtilTest" name="testLoadDataByTypeForOrganisation" time="0"/>
   <testcase classname="com.zendesk.util.DataLoadUtilTest" name="testLoadDataByType" time="0"/>
-  <testcase classname="com.zendesk.util.DataLoadUtilTest" name="testLoadDataByTypeForTickets" time="0"/>
   <testcase classname="com.zendesk.util.DataLoadUtilTest" name="testLoadDataByTypeForUser" time="0"/>
+  <testcase classname="com.zendesk.util.DataLoadUtilTest" name="testLoadDataByTypeForTickets" time="0"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="com.zendesk.controller.ticket.TicketSearchControllerTest" time="0.668" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="com.zendesk.controller.ticket.TicketSearchControllerTest" time="0.661" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -65,20 +65,20 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForOrganzationId" time="0.018"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForId" time="0.002"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForCreatedAt" time="0.004"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForExternalId" time="0.004"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForTags" time="0.045"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForPriority" time="0.111"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForUrl" time="0.001"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForHasIncidents" time="0.18"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForDescription" time="0.003"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForDueDate" time="0.002"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForSubject" time="0.002"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForStatus" time="0.09"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForOrganzationId" time="0.033"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForType" time="0.078"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForStatus" time="0.088"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForDescription" time="0.002"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForDueDate" time="0.001"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForPriority" time="0.123"/>
   <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForAssigneeId" time="0.007"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForSubmitterId" time="0.006"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForType" time="0.057"/>
-  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForVia" time="0.136"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForUrl" time="0.001"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForSubmitterId" time="0.005"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForHasIncidents" time="0.184"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForVia" time="0.104"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForSubject" time="0.002"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForId" time="0.003"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForCreatedAt" time="0.002"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForTags" time="0.025"/>
+  <testcase classname="com.zendesk.controller.ticket.TicketSearchControllerTest" name="testPerformSearchForExternalId" time="0.003"/>
 </testsuite>

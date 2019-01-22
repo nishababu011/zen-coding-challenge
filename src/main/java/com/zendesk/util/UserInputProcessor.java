@@ -1,5 +1,7 @@
 package com.zendesk.util;
 
+import org.apache.log4j.Logger;
+
 import com.zendesk.common.SearchAppMenu;
 import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
@@ -10,6 +12,8 @@ import com.zendesk.exception.InvalidUserInputException;
  *
  */
 public class UserInputProcessor {
+	
+	final static Logger logger = Logger.getLogger(UserInputProcessor.class);
 	
 	/**
 	 * Method to map the user inputs to appropriate actions
@@ -65,6 +69,7 @@ public class UserInputProcessor {
 		} else if (SearchConstants.SEARCH_MENU_ORGANIZATIONS.equals(userInput)) {
 			searchCriteria.setSearchType(SearchConstants.SEARCH_FIELD_ORGANIZATIONS);
 		} else {
+			logger.debug(SearchConstants.SEARCH_ENTER_INVALID_USER_ENTRY + " : user entered for Submenu: " +  userInput);
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_USER_ENTRY);
 		}
 

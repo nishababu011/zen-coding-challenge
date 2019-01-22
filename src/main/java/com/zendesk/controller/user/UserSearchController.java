@@ -17,19 +17,18 @@ import com.zendesk.util.SearchConstants;
 
 /**
  * Controller class for User
- * @author 
  *
  */
-public class UserSearchController extends SearchController {
+public class UserSearchController implements SearchController {
 
 	/**
-	 * 
+	 * This method applies the filters and logs the results to the user console
 	 */
-	public void performSearch(SearchCriteria searchCriteria) throws  InvalidUserInputException{
+	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException {
 		checkIfDataLoaded();
 		Stream<User> str = Arrays.stream(SearchDataInitialiser.SEARCH_DATA.getUsers());
 		UserMatcher userMatcher = SearchConfig.userMatcherMap.get(searchCriteria.getFieldName());
-		if(userMatcher == null) {
+		if (userMatcher == null) {
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME);
 		}
 		Predicate<User> userFilter = (User u) -> userMatcher.searchByFieldName(searchCriteria, u);
@@ -48,7 +47,7 @@ public class UserSearchController extends SearchController {
 	}
 	
 	/**
-	 * 
+	 * This method checks if the static data has been loaded to filter the results
 	 */
 	private void checkIfDataLoaded() throws InvalidUserInputException{
 		if(SearchDataInitialiser.SEARCH_DATA == null || SearchDataInitialiser.SEARCH_DATA.getUsers() == null) {

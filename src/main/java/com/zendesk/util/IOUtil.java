@@ -10,7 +10,7 @@ import java.util.TimeZone;
 
 /**
  * 
- * @author 
+ * Methods to read user input and parse user input
  *
  */
 public class IOUtil {
@@ -52,7 +52,11 @@ public class IOUtil {
 		return date;
 	}
 	
-	
+	/**
+	 * 
+	 * @param longValue
+	 * @return
+	 */
 	public static Long parseLong(String longValue) {
 		long value = 0L;
 		try {
@@ -65,7 +69,11 @@ public class IOUtil {
 		return value;
 	}
 	
-	
+	/**
+	 * 
+	 * @param booleanValue
+	 * @return
+	 */
 	public static Boolean parseBoolean(String booleanValue) {
 		Boolean value = null;
 		

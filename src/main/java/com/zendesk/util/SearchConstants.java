@@ -2,7 +2,7 @@ package com.zendesk.util;
 
 /**
  * 
- * @author
+ * SearchConstants
  *
  */
 public class SearchConstants {
@@ -45,4 +45,18 @@ public class SearchConstants {
 	public static final String SEARCH_DATE_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 	
 	public static final String SEARCH_QUIT = "quit";
+	
+	public static final String SEARCH_MENU_OPTION = "1";
+	
+	public static final String SEARCH_LIST_FIELDS_OPTION = "2";
+	
+	public static final String SEARCH_EXIT_OPTION = "3";
+	
+	public static final String SEARCH_MENU_USERS = "1";
+
+	public static final String SEARCH_MENU_TICKETS = "2";
+
+	public static final String SEARCH_MENU_ORGANIZATIONS = "3";
+	
+	public static final String SEARCH_ERROR_INVALID_MENU_OPTION = "Invalid Menu option entered";
 }

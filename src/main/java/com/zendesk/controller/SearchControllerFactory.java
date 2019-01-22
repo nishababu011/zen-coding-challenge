@@ -14,7 +14,6 @@ import com.zendesk.util.SearchConstants;
 public class SearchControllerFactory {
 
 	/**
-	 * 
 	 * @param searchType
 	 * @return
 	 */

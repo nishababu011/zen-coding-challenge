@@ -13,7 +13,7 @@ import com.zendesk.model.User;
 
 /**
  * 
- * @author 
+ * Manages the method to read data from files
  *
  */
 public class DataLoadUtil {

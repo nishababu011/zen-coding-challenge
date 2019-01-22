@@ -11,8 +11,6 @@ import com.zendesk.util.SearchConstants;
  * The search data is loaded one time dynamically from the json file
  * This is to avoid performance overhead on reading the files on each search operation.
  * 
- * @author 
- *
  */
 public class SearchDataInitialiser {
 	

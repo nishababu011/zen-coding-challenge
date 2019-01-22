@@ -6,9 +6,7 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
- * 
- * @author 
- *
+ * Ticket
  */
 public class Ticket {
 	

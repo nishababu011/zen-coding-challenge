@@ -2,7 +2,7 @@ package com.zendesk.util;
 
 /**
  * 
- * @author
+ * Methods to print to the console
  *
  */
 public class LogUtil {

@@ -5,8 +5,6 @@ import com.zendesk.model.User;
 
 /**
  * Matcher interface for User
- * @author 
- * 
  */
 public interface  UserMatcher {
 

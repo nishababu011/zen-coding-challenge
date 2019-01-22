@@ -6,7 +6,6 @@ import com.zendesk.model.User;
 
 /**
  * This stores all the search data that are read from the JSON
- * @author
  *
  */
 public class SearchData {
@@ -40,8 +39,5 @@ public class SearchData {
 	public void setOrganizations(Organization[] organizations) {
 		this.organizations = organizations;
 	}	
-	
-	
-	
 
 }

@@ -4,12 +4,10 @@ import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
 
 /**
- * Abstract controller that can be extended to implement
+ * Controller that can be implemented
  * entity specific logic
- * @author 
  *
  */
-public abstract class SearchController {
-
-	public abstract void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException;
+public interface SearchController {
+	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException;
 }

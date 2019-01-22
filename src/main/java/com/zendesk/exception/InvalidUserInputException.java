@@ -2,14 +2,12 @@ package com.zendesk.exception;
 
 /**
  * Exception thrown when an error occurs due to invalid user input
- * @author
  *
  */
 public class InvalidUserInputException extends Exception {
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
+	
 	String errorMessage;
 
 	public InvalidUserInputException(String errorMessage) {

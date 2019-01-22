@@ -2,7 +2,7 @@ package com.zendesk.util;
 
 /**
  * 
- * @author 
+ * OrganizationSearchConstants 
  *
  */
 public class OrganizationSearchConstants {

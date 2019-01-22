@@ -3,9 +3,7 @@ package com.zendesk.service;
 import com.zendesk.dto.SearchCriteria;
 
 /**
- * 
- * @author 
- *
+ * SearchService
  */
 public interface SearchService {
 	

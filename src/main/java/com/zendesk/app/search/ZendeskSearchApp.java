@@ -12,13 +12,13 @@ import com.zendesk.util.UserInputProcessor;
 
 /**
  * 
- * @author
+ * The main class of the application
  *
  */
 public class ZendeskSearchApp {
 
 	/**
-	 * 
+	 * This the main method that drives the application
 	 * @param hh
 	 */
 	public static void main(String hh[]) {

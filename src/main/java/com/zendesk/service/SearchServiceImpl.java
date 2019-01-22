@@ -9,7 +9,7 @@ import com.zendesk.util.SearchConstants;
 
 /**
  * 
- * @author
+ * SearchServiceImpl
  *
  */
 public class SearchServiceImpl implements SearchService {

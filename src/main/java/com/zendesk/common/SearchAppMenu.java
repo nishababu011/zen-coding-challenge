@@ -12,6 +12,7 @@ import com.zendesk.exception.InvalidUserInputException;
  *
  */
 public enum SearchAppMenu {
+	
 	SEARCH{
 		public void performAction(SearchCriteria searchCriteria) {
 			searchCriteria.setSubMenuActive(true);
@@ -42,17 +43,14 @@ public enum SearchAppMenu {
 	 * @throws InvalidUserInputException
 	 */
 	public static SearchAppMenu mapByUserInput(String userInput) throws InvalidUserInputException {
-		if("1".equals(userInput)) {
+		if(SearchConstants.SEARCH_MENU_OPTION.equals(userInput)) {
 			return SEARCH;
-		} else if("2".equals(userInput)) {
+		} else if(SearchConstants.SEARCH_LIST_FIELDS_OPTION.equals(userInput)) {
 			return VIEW_LIST_FIELDS;
-		} else if("3".equals(userInput)) {
+		} else if(SearchConstants.SEARCH_EXIT_OPTION.equals(userInput)) {
 			return EXIT;
 		} else {
-			throw new InvalidUserInputException("Invalid Menu option entered");
+			throw new InvalidUserInputException(SearchConstants.SEARCH_ERROR_INVALID_MENU_OPTION);
 		}
-		
 	}
-	
-
 }

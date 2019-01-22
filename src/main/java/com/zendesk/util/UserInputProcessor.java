@@ -4,8 +4,18 @@ import com.zendesk.common.SearchAppMenu;
 import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
 
+/**
+ * 
+ * This class contains method that interprets the user inputs
+ *
+ */
 public class UserInputProcessor {
 	
+	/**
+	 * Method to map the user inputs to appropriate actions
+	 * @param searchCriteria
+	 * @param userInputStr
+	 */
 	public static void processUserInput(SearchCriteria searchCriteria, String userInputStr) {
 		if (userInputStr != null && searchCriteria != null) {
 			String userInput = userInputStr.trim();
@@ -48,11 +58,11 @@ public class UserInputProcessor {
 			throws InvalidUserInputException {
 
 		CLIUtil.exitOnUserInput(userInput);
-		if ("1".equals(userInput)) {
+		if (SearchConstants.SEARCH_MENU_USERS.equals(userInput)) {
 			searchCriteria.setSearchType(SearchConstants.SEARCH_FIELD_USERS);
-		} else if ("2".equals(userInput)) {
+		} else if (SearchConstants.SEARCH_MENU_TICKETS.equals(userInput)) {
 			searchCriteria.setSearchType(SearchConstants.SEARCH_FIELD_TICKETS);
-		} else if ("3".equals(userInput)) {
+		} else if (SearchConstants.SEARCH_MENU_ORGANIZATIONS.equals(userInput)) {
 			searchCriteria.setSearchType(SearchConstants.SEARCH_FIELD_ORGANIZATIONS);
 		} else {
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_USER_ENTRY);

@@ -1,4 +1,4 @@
-package com.zendesk.config;
+package com.zendesk.search.config;
 
 import java.util.Map;
 
@@ -13,13 +13,13 @@ import com.zendesk.util.TicketSearchConstants;
  *  This config stores the map of each fields of Ticket 
  * and its corresponding Matcher class implementation.
  * This map is loaded statically on start of the application
- * @author 
  *
  */
 public class TicketSearchConfig {
 
 	/**
-	 * 
+	 * This config store a map of search field and the respective implementation
+	 * of the TicketMatcher interface
 	 * @param ticketMatcherMap
 	 */
 	public static void populateTicketMatcherConfig(Map<String, TicketMatcher> ticketMatcherMap) {

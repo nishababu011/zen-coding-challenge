@@ -14,22 +14,20 @@ import com.zendesk.search.ticket.TicketMatcher;
 import com.zendesk.util.LogUtil;
 import com.zendesk.util.SearchConstants;
 
-
 /**
  * Controller class for Ticket
- * @author 
- *
+ * 
  */
-public class TicketSearchController extends SearchController {
-	
+public class TicketSearchController implements SearchController {
+
 	/**
-	 * 
+	 * This method applies the filters and logs the results to the user console
 	 */
-	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException{
+	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException {
 		checkIfDataLoaded();
 		Stream<Ticket> str = Arrays.stream(SearchDataInitialiser.SEARCH_DATA.getTickets());
 		TicketMatcher ticketMatcher = SearchConfig.ticketMatcherMap.get(searchCriteria.getFieldName());
-		if(ticketMatcher == null) {
+		if (ticketMatcher == null) {
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME);
 		}
 		Predicate<Ticket> ticketFilter = (Ticket u) -> ticketMatcher.searchByFieldName(searchCriteria, u);
@@ -47,15 +45,15 @@ public class TicketSearchController extends SearchController {
 			searchCriteria.reset();
 		}
 	}
-	
+
 	/**
-	 * 
+	 * This method checks if the static data has been loaded to filter the results
 	 */
-	private void checkIfDataLoaded() throws InvalidUserInputException{
-		if(SearchDataInitialiser.SEARCH_DATA == null || SearchDataInitialiser.SEARCH_DATA.getTickets() == null) {
+	private void checkIfDataLoaded() throws InvalidUserInputException {
+		if (SearchDataInitialiser.SEARCH_DATA == null || SearchDataInitialiser.SEARCH_DATA.getTickets() == null) {
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME);
 		}
-		
+
 	}
 
 }

@@ -19,19 +19,19 @@ import com.zendesk.util.SearchConstants;
  * @author 
  *
  */
-public class OrganizationSearchController extends SearchController {
+public class OrganizationSearchController implements SearchController {
 
 	/**
-	 * 
+	 * This method applies the filters and logs the results to the user console
 	 */
-	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException{
+	public void performSearch(SearchCriteria searchCriteria) throws InvalidUserInputException {
 		checkIfDataLoaded();
 		Stream<Organization> str = Arrays.stream(SearchDataInitialiser.SEARCH_DATA.getOrganizations());
 		OrganizationMatcher orgMatcher = SearchConfig.organizationMatcherMap.get(searchCriteria.getFieldName());
-		if(orgMatcher == null) {
+		if (orgMatcher == null) {
 			throw new InvalidUserInputException(SearchConstants.SEARCH_ENTER_INVALID_FIELD_NAME);
 		}
-				Predicate<Organization> orgFilter = (Organization u) -> SearchConfig.organizationMatcherMap
+		Predicate<Organization> orgFilter = (Organization u) -> SearchConfig.organizationMatcherMap
 				.get(searchCriteria.getFieldName()).searchByFieldName(searchCriteria, u);
 		Stream<Organization> results = str.filter(orgFilter);
 		if (results != null) {
@@ -45,8 +45,10 @@ public class OrganizationSearchController extends SearchController {
 			LogUtil.logToConsole(SearchConstants.SEARCH_NO_RESULTS_FOUND);
 			searchCriteria.reset();
 		}
-	}/**
-	 * 
+	}
+	
+	/**
+	 * This method checks if the static data has been loaded to filter the results
 	 */
 	private void checkIfDataLoaded() throws InvalidUserInputException{
 		if(SearchDataInitialiser.SEARCH_DATA == null || SearchDataInitialiser.SEARCH_DATA.getOrganizations() == null) {

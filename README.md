@@ -8,8 +8,10 @@ Instructions to run the application.
 2. Open cmd and cd to <path>/ZendeskSearchApp
 3. Run command :  java -jar ZendeskSearchApp.jar
  
-Note: Otherwise the application source can be downloaded and run mvn clean install 
- and the run the jar from the target folder of the project 
+--> Otherwise  
+1. clone zen-coding-challenge 
+2. run mvn clean install
+3. Run the command java -jar ZendeskSearchApp.jar from the target\ZendeskSearchApp location.
  
   
 Application displays the main menu as below:

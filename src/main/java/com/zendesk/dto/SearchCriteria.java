@@ -22,6 +22,8 @@ public class SearchCriteria {
 	
 	private boolean subMenuActive;
 	
+	private boolean isRelatedEntitySearch;
+	
 	public void reset() {
 		this.searchType  = null;
 		this.fieldName = null;
@@ -31,6 +33,7 @@ public class SearchCriteria {
 		this.searchSelected = false;
 		this.listSelected = false;
 		this.subMenuActive = false;
+		this.isRelatedEntitySearch = false;
 	}
 
 	public String getFieldName() {
@@ -95,6 +98,14 @@ public class SearchCriteria {
 
 	public void setSubMenuActive(boolean subMenuActive) {
 		this.subMenuActive = subMenuActive;
+	}
+
+	public boolean isRelatedEntitySearch() {
+		return isRelatedEntitySearch;
+	}
+
+	public void setRelatedEntitySearch(boolean isRelatedEntitySearch) {
+		this.isRelatedEntitySearch = isRelatedEntitySearch;
 	}
 	
 	

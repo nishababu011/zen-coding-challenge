@@ -14,12 +14,12 @@ import com.zendesk.util.SearchConstants;
  */
 public class SearchDataInitialiser {
 	
-	 public static SearchData SEARCH_DATA;
+	 public static final SearchData SEARCH_DATA;
 
 	/**
 	 * This method reads the data from the json data files and loads into the memory
 	 */
-	public static void loadSearchData(){
+	 static{
 		SEARCH_DATA = new SearchData();
 		SEARCH_DATA.setUsers((User[]) DataLoadUtil.loadDataByType(SearchConstants.SEARCH_FIELD_USERS,
 				SearchConstants.SEARCH_FIELD_USERS_FILE_PATH));

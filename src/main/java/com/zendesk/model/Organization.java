@@ -10,40 +10,34 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  */
 public class Organization {
 
-	 private Long _id;
-	 
-	 private String url;
-	 
-	 private String external_id;
-	 
-	 private String name;
-	 
-	 private List<String> domain_names;
-	 
-	 @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="GMT")
-	 private Date created_at;
-	 
-	 private String details;
-	 
-	 private Boolean shared_tickets;
-	 
-	 private List<String> tags;
-	 
-	 
+	private Long _id;
+
+	private String url;
+
+	private String external_id;
+
+	private String name;
+
+	private List<String> domain_names;
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "GMT")
+	private Date created_at;
+
+	private String details;
+
+	private Boolean shared_tickets;
+
+	private List<String> tags;
 
 	@Override
 	public String toString() {
-		return "_id" +"\t"+"\t"+"\t"+ _id + "\n"
-				+ "url" +"\t"+"\t"+"\t"+ url + "\n"
-				+ "external_id" +"\t"+"\t"+ external_id + "\n"
-				+ "name" +"\t"+"\t"+"\t"+ name + "\n"
-				+ "domain_names" +"\t"+"\t"+ domain_names + "\n"
-				+ "created_at" +"\t"+"\t"+ created_at + "\n"
-				+ "details" +"\t"+"\t"+"\t"+ details + "\n"
-				+ "shared_tickets" +"\t"+"\t"+ shared_tickets + "\n"
-				+ "tags" +"\t"+"\t"+"\t"+ tags + "\n"+ "\n";
+		return "\n" + "_id" + "\t" + "\t" + "\t" + _id + "\n" + "url" + "\t" + "\t" + "\t" + url + "\n" + "external_id"
+				+ "\t" + "\t" + external_id + "\n" + "name" + "\t" + "\t" + "\t" + name + "\n" + "domain_names" + "\t"
+				+ "\t" + domain_names + "\n" + "created_at" + "\t" + "\t" + created_at + "\n" + "details" + "\t" + "\t"
+				+ "\t" + details + "\n" + "shared_tickets" + "\t" + "\t" + shared_tickets + "\n" + "tags" + "\t" + "\t"
+				+ "\t" + tags + "\n";
 	}
-	
+
 	public Long get_id() {
 		return _id;
 	}
@@ -70,6 +64,10 @@ public class Organization {
 
 	public String getName() {
 		return name;
+	}
+
+	public String getNameWithLabel() {
+		return "Organization" + "\t" + "\t" + name;
 	}
 
 	public void setName(String name) {
@@ -115,6 +113,5 @@ public class Organization {
 	public void setTags(List<String> tags) {
 		this.tags = tags;
 	}
-	 
-	 
+
 }

@@ -4,7 +4,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,7 +11,6 @@ import org.junit.Test;
 import com.zendesk.config.SearchConfig;
 import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
-import com.zendesk.initialiser.SearchDataInitialiser;
 import com.zendesk.util.TicketSearchConstants;
 
 public class TicketSearchControllerTest {
@@ -23,12 +21,7 @@ public class TicketSearchControllerTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		SearchDataInitialiser.loadSearchData();
 		SearchConfig.loadConfig();
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
 	}
 
 	@Before

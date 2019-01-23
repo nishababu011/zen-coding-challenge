@@ -9,63 +9,52 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  * Ticket
  */
 public class Ticket {
-	
-	  private String _id;
-	  
-	  private String url;
-	  
-	  private String external_id;
-	  
-	  @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="GMT")
-	  private Date created_at;
-	  
-	  private String type;
-	  
-	  private String subject;
-	  
-	  private String description;
-	  
-	  private String priority;
-	  
-	  private String status;
-	  
-	  private Long submitter_id;
-	  
-	  private Long assignee_id;
-	  
-	  private Long organization_id;
-	  
-	  private List<String> tags;
-	   
-	  private Boolean has_incidents;
-	  
-	  @JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="GMT")
-	  private Date due_at;
-	  
-	  private String via;
-	  
-	  
+
+	private String _id;
+
+	private String url;
+
+	private String external_id;
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "GMT")
+	private Date created_at;
+
+	private String type;
+
+	private String subject;
+
+	private String description;
+
+	private String priority;
+
+	private String status;
+
+	private Long submitter_id;
+
+	private Long assignee_id;
+
+	private Long organization_id;
+
+	private List<String> tags;
+
+	private Boolean has_incidents;
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "GMT")
+	private Date due_at;
+
+	private String via;
 
 	@Override
 	public String toString() {
-		return "_id" +"\t"+"\t"+"\t"+ _id + "\n"
-				+ "url" +"\t"+"\t"+"\t"+ url + "\n"
-				+ "external_id" +"\t"+"\t"+ external_id + "\n"
-				+ "created_at" +"\t"+"\t"+ created_at + "\n" 
-				+ "type" +"\t"+"\t"+"\t"+ type + "\n"
-				+ "subject" +"\t"+"\t"+"\t" + subject + "\n"
-				+ "description" +"\t"+"\t"+ description + "\n"
-				+ "priority" +"\t"+"\t"+ priority + "\n"
-				+ "status" +"\t"+"\t"+"\t"+ status + "\n"
-				+ "submitter_id" +"\t"+"\t"+ submitter_id + "\n"
-				+ "assignee_id" +"\t"+"\t"+ assignee_id + "\n"
-				+ "organization_id" +"\t"+"\t"+ organization_id + "\n"
-				+ "tags" +"\t"+"\t"+"\t"+ tags + "\n"
-				+ "has_incidents" +"\t"+"\t"+ has_incidents + "\n"
-				+ "due_at" +"\t"+"\t"+"\t"+ due_at + "\n"
-				+ "via" +"\t"+"\t"+"\t"+ via + "\n"+ "\n";
+		return "\n" + "_id" + "\t" + "\t" + "\t" + _id + "\n" + "url" + "\t" + "\t" + "\t" + url + "\n" + "external_id"
+				+ "\t" + "\t" + external_id + "\n" + "created_at" + "\t" + "\t" + created_at + "\n" + "type" + "\t"
+				+ "\t" + "\t" + type + "\n" + "subject" + "\t" + "\t" + "\t" + subject + "\n" + "description" + "\t"
+				+ "\t" + description + "\n" + "priority" + "\t" + "\t" + priority + "\n" + "status" + "\t" + "\t" + "\t"
+				+ status + "\n" + "submitter_id" + "\t" + "\t" + submitter_id + "\n" + "assignee_id" + "\t" + "\t"
+				+ assignee_id + "\n" + "organization_id" + "\t" + "\t" + organization_id + "\n" + "tags" + "\t" + "\t"
+				+ "\t" + tags + "\n" + "has_incidents" + "\t" + "\t" + has_incidents + "\n" + "due_at" + "\t" + "\t"
+				+ "\t" + due_at + "\n" + "via" + "\t" + "\t" + "\t" + via + "\n";
 	}
-	
 
 	public String get_id() {
 		return _id;
@@ -109,6 +98,10 @@ public class Ticket {
 
 	public String getSubject() {
 		return subject;
+	}
+
+	public String getSubjectWithLabel() {
+		return "Tickets" + "\t" + "\t" + "\t" + subject;
 	}
 
 	public void setSubject(String subject) {
@@ -195,5 +188,4 @@ public class Ticket {
 		this.via = via;
 	}
 
-	  
 }

@@ -17,7 +17,7 @@ public class SearchControllerFactory {
 	 * @param searchType
 	 * @return
 	 */
-	public SearchController getSearchControllerByType(String searchType) {
+	public static SearchController getSearchControllerByType(String searchType) {
 
 		if (SearchConstants.SEARCH_FIELD_USERS.equals(searchType)) {
 			return new UserSearchController();

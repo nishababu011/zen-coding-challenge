@@ -59,4 +59,6 @@ public class SearchConstants {
 	public static final String SEARCH_MENU_ORGANIZATIONS = "3";
 	
 	public static final String SEARCH_ERROR_INVALID_MENU_OPTION = "Invalid Menu option entered.\n";
+	
+	public static final String SEARCH_NEW_LINE = "\n";
 }

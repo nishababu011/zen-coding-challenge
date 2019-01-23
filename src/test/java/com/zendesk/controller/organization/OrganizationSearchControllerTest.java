@@ -1,9 +1,9 @@
 package com.zendesk.controller.organization;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -11,7 +11,6 @@ import org.junit.Test;
 import com.zendesk.config.SearchConfig;
 import com.zendesk.dto.SearchCriteria;
 import com.zendesk.exception.InvalidUserInputException;
-import com.zendesk.initialiser.SearchDataInitialiser;
 import com.zendesk.util.OrganizationSearchConstants;
 
 public class OrganizationSearchControllerTest {
@@ -22,13 +21,9 @@ public class OrganizationSearchControllerTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		SearchDataInitialiser.loadSearchData();
 		SearchConfig.loadConfig();
 	}
 
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
 
 	@Before
 	public void setUp() throws Exception {

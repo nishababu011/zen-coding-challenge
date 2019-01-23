@@ -7,70 +7,63 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 /**
  * User data.
+ * User ->Id-> Ticket ->submitter_id
+ * User ->OrganizationId-> Organization -> Id
  */
 public class User {
-	
+
 	private Long _id;
-	
+
 	private String url;
-	
+
 	private String external_id;
-	
+
 	private String name;
-	
+
 	private String alias;
-	
-	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="GMT")
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "GMT")
 	private Date created_at;
-	
+
 	private Boolean active;
-	
+
 	private Boolean verified;
-	
+
 	private Boolean shared;
-	
+
 	private String locale;
-	
+
 	private String timezone;
-	
-	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss", timezone="GMT")
+
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "GMT")
 	private Date last_login_at;
-	
+
 	private String email;
-	
+
 	private String phone;
-	
+
 	private String signature;
-	
+
 	private Long organization_id;
-	
+
 	private List<String> tags;
-	
+
 	private Boolean suspended;
-	
+
 	private String role;
-	
+
+
 	@Override
 	public String toString() {
-		return "_id" +"\t"+"\t"+"\t"+ _id + "\n" 
-				+ "url"+"\t" +"\t"+"\t"+ url + "\n" 
-				+ "external_id"+"\t"+"\t" + external_id + "\n"
-				+ "name" +"\t" +"\t"+"\t"+ name + "\n"
-				+ "alias" +"\t" +"\t"+"\t"+ alias + "\n"
-				+ "created_at" +"\t"+"\t" + created_at + "\n" 
-				+ "active" +"\t" +"\t"+"\t"+ active + "\n"
-				+ "verified" +"\t" +"\t"+ verified + "\n"
-				+ "shared" +"\t"+"\t"+"\t" + shared + "\n"
-				+ "locale" +"\t"+"\t"+"\t" + locale + "\n"
-				+ "timezone" +"\t" +"\t"+ timezone + "\n"
-				+ "last_login_at" +"\t" +"\t"+ last_login_at + "\n"
-				+ "email" +"\t" +"\t"+"\t"+ email + "\n"
-				+ "phone" +"\t" +"\t"+"\t"+ phone + "\n"
-				+ "signature" +"\t" +"\t"+ signature + "\n" 
-				+ "organization_id" +"\t" +"\t"+ organization_id + "\n" 
-				+ "tags" +"\t" +"\t"+"\t"+ tags + "\n"
-				+ "suspended" +"\t" +"\t"+ suspended + "\n" 
-				+ "role" +"\t"+"\t"+"\t" + role+ "\n"+ "\n";
+		return "\n" + "_id" + "\t" + "\t" + "\t" + _id + "\n" + "url" + "\t" + "\t" + "\t" + url + "\n" + "external_id"
+				+ "\t" + "\t" + external_id + "\n" + "name" + "\t" + "\t" + "\t" + name + "\n" + "alias" + "\t" + "\t"
+				+ "\t" + alias + "\n" + "created_at" + "\t" + "\t" + created_at + "\n" + "active" + "\t" + "\t" + "\t"
+				+ active + "\n" + "verified" + "\t" + "\t" + verified + "\n" + "shared" + "\t" + "\t" + "\t" + shared
+				+ "\n" + "locale" + "\t" + "\t" + "\t" + locale + "\n" + "timezone" + "\t" + "\t" + timezone + "\n"
+				+ "last_login_at" + "\t" + "\t" + last_login_at + "\n" + "email" + "\t" + "\t" + "\t" + email + "\n"
+				+ "phone" + "\t" + "\t" + "\t" + phone + "\n" + "signature" + "\t" + "\t" + signature + "\n"
+				+ "organization_id" + "\t" + "\t" + organization_id + "\n" + "tags" + "\t" + "\t" + "\t" + tags + "\n"
+				+ "suspended" + "\t" + "\t" + suspended + "\n" + "role" + "\t" + "\t" + "\t" + role + "\n";
 	}
 
 	public Long get_id() {
@@ -99,6 +92,10 @@ public class User {
 
 	public String getName() {
 		return name;
+	}
+
+	public String getNameWithLabel() {
+		return "User" + "\t" + "\t" + "\t" + name;
 	}
 
 	public void setName(String name) {

@@ -32,10 +32,15 @@ Application works in an interactive way with the user inputs and displays the ma
 
 # Technical Notes:
 
--> Date search fields has to be in the format yyyy-MM-dd'T'HH:mm:ss (as appearing in the json files)
--> The data is read from JSON files using the Jackson Api. To make it simple it is loaded statically at the start of the application.
--> Decorator pattern is used to perform the comparison between fields and using Matcher interface implementation Which is configured in    Maps.
--> The code is written such that each entity can be extended to add new fields.
--> It is also extendable such that new entity can be added without changing existing logic.
--> Test case covers search of all the fields that can be searched through the application.
+ -> Date search fields has to be in the format yyyy-MM-dd'T'HH:mm:ss (as appearing in the json files)
+ 
+ -> The data is read from JSON files using the Jackson Api. To make it simple it is loaded statically at the start of the application.
+ 
+ -> Decorator pattern is used to perform the comparison between fields and using Matcher interface implementation Which is configured in    Maps.
+ 
+ -> The code is written such that each entity can be extended to add new fields.
+ 
+ -> It is also extendable such that new entity can be added without changing existing logic.
+ 
+ -> Test case covers search of all the fields that can be searched through the application.
 

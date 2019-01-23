@@ -22,7 +22,6 @@ public class ZendeskSearchApp {
 	 * @param hh
 	 */
 	public static void main(String hh[]) {
-		//SearchDataInitialiser.loadSearchData();
 		SearchConfig.loadConfig();
 		LogUtil.logToConsole(SearchConstants.SEARCH_WELCOME);
 		SearchCriteria searchCriteria = new SearchCriteria();
